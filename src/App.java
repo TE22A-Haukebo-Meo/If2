@@ -2,40 +2,24 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int tal1 = 10;
-        int tal2 = 20;
+        System.out.println("Ålder?");
+        Scanner tb = new Scanner(System.in);
+        int age = tb.nextInt();
+        System.out.println("Äru medlem");
+            tb.nextLine();
+        String medlem = tb.nextLine();
 
-        if(tal2>tal1)
+        if(age>=18)
         {
-            System.out.println(tal2+" är större än "+tal1);
+            System.out.println("Ajde kom in");
+        }
+        else if(medlem.equalsIgnoreCase("ja"))
+        {
+            System.out.println("Ajde kom in");
         }
         else{
-            System.out.println(tal2+" är mindre än "+tal1);
+            System.out.println("Jalla tagga härifrån");
         }
-    
-
-    Scanner tb = new Scanner(System.in);
-
-    int klocka = tb.nextInt();
-
-
-    if(klocka>=7)
-    {
-        System.out.println("WAKE UP! ITS THE FIRST OF THE MONTH!");
-    }
-    else if(klocka==12)
-    {
-        System.out.println("Vad gör en tandläkare på lunchen? Käkar.");
-    }
-    else if(klocka>=23)
-    {
-        System.out.println("GO TO SLEEP");
-    }
-    else{
-        System.out.println("HE HE HUUU");
-    }
-
-
     }
 }
 
