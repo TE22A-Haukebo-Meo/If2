@@ -1,18 +1,14 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        int litetTal=10;
+        int tal1 = 10;
+        int tal2 = 20;
 
-        if(litetTal<1000)
+        if(tal2>tal1)
         {
-            int stortTal=1000;
-            System.out.println(litetTal+" är större än "+stortTal);
+            System.out.println(tal2+" är större än "+tal1);
         }
-        else
-        {
-            System.out.println(litetTal+" är mindre än "+stortTal);
+        else{
+            System.out.println(tal2+" är mindre än "+tal1);
         }
-        System.out.println("litetTal="+litetTal+", stortTal="+stortTal);
-
-        //StortTal är inte definierad i alla kroppar.
 }
 
