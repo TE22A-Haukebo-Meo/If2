@@ -10,5 +10,6 @@ public class App {
         else{
             System.out.println(tal2+" är mindre än "+tal1);
         }
+    }   
 }
 
