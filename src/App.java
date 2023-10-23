@@ -20,7 +20,7 @@ public class App {
 //        else{
 //            System.out.println("Jalla tagga härifrån");
 //        }
-        System.out.println("Ange Användarnamn");
+        /*System.out.println("Ange Användarnamn");
         String user = tb.nextLine();
         System.out.println("Ange lösenord");
         String pass = tb.nextLine();
@@ -31,6 +31,25 @@ public class App {
         } 
         else{
             System.out.println("Fel användarnamn eller lösenord.");
+        } */
+
+        System.out.println("Meny väderprogram");
+        System.out.println("1. Temperatur");
+        System.out.println("2. Vindhastighet");
+        System.out.println("3. Luftfuktighet");
+        System.out.println("Vilken vill du veta?");
+        int L = tb.nextInt();
+
+        switch(L){
+            case 1:
+                System.out.println("Mycket varmt");
+                break;
+            case 2:
+                System.out.println("Veri afast");
+                break;
+            case 3:
+                System.out.println("No mucho");
+                break;
         }
     }
 }
